@@ -1,5 +1,7 @@
 # d3.tip: Tooltips for d3.js Version 4, without ES6
 
+[Screenshot](https://gist.githubusercontent.com/davegotz/bd54b56723c154d25eedde6504d30ad7/raw/edc4930517ca462886debd1bf0a90eabe0dbb393/thumbnail.png)
+
 See a [live example](https://bl.ocks.org/davegotz/bd54b56723c154d25eedde6504d30ad7).
 
 ## Origins
