@@ -99,8 +99,8 @@ d3.tip = function() {
       var args = Array.prototype.slice.call(arguments);
       if (args.length === 1) {
         var styles = args[0];
-        Object.keys(styles).forEach((key) => {
-          d3.selection.prototype.style.apply(getNodeEl(), [key, styles[key]]);
+        Object.keys(styles).forEach(functino(key) {
+          return d3.selection.prototype.style.apply(getNodeEl(), [key, styles[key]]);
         });
       }
     }
