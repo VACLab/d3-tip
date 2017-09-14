@@ -44,6 +44,7 @@ d3.tip = function() {
         scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft
 
     nodel.html(content)
+      .attr("keep_visible", "false")
       .style('position', 'absolute')
       .style('opacity', 1)
       .style('pointer-events', 'all')
@@ -62,9 +63,18 @@ d3.tip = function() {
   // Returns a tip
   tip.hide = function() {
     var nodel = getNodeEl()
-    nodel
+    if (nodel.attr("keep_visible") != "true") nodel
       .style('opacity', 0)
       .style('pointer-events', 'none')
+    return tip
+  }
+
+  // Public - toggle foring or not the tip to remain visible
+  //
+  // Returns a tip
+  tip.toggle_keep_visible = function() {
+    var nodel = getNodeEl()
+    nodel.attr("keep_visible", nodel.attr("keep_visible") == "false")
     return tip
   }
 
