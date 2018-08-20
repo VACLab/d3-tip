@@ -241,8 +241,8 @@ d3.tip = function() {
     var node = d3.select(document.createElement('div'))
     node
       .style('position', 'absolute')
-      .style('top', 0)
-      .style('opacity', 0)
+      .style('top', '0')
+      .style('opacity', '0')
       .style('pointer-events', 'none')
       .style('box-sizing', 'border-box')
 
